@@ -1,0 +1,7 @@
+1. I don't care.
+
+2. Mate i really don't care. Here is what ChatGPT wrote:
+
+To characterize the audio aura of the top 100 songs from 2018 of one listener, I would analyze various audio features such as tempo, key, energy, danceability, valence, acousticness, and instrumentalness. By aggregating these features across all the songs and calculating summary statistics like averages or medians, I could gain insights into the overall mood, style, and characteristics of the listener's music preferences. However, this approach might not be very representative due to factors such as the diversity of the listener's preferences, potential temporal bias, and the limited sample size of just 100 songs. To address these limitations, I would propose alternative approaches such as long-term analysis, genre-based analysis, dynamic analysis, and personalized recommendations to obtain a more accurate understanding of the listener's audio aura.
+
+Enjoy.

@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Because of bubble sort ideal case of sorting 2 numbers at a time and if the numbers are already sorted it should only pass trought the numbers once. Making it the fasted to sort sorted numbers.
+
+sort2 uses: Merge Sort
+
+How do you know?: Because merge sort is faster than selection and bubble sort. When ran all sort method on random50000.txt. Sort2 is significantly faster than sort1 and sort3.
+
+sort3 uses: Selection Sort
+
+How do you know?: Becasue selection sort sorts each number at a time and passing trought numbers multiple times making it slower than bubble sort in sorting sorted numbers.
