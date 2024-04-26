@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1>{{price_info}}</h1>
+    <div class="section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in portfolio_data %}
+                <tr>
+                    <td>{{ data.symbol }}</td>
+                    <td>{{ data.shares }}</td>
+                    <td>{{ data.current_price | usd}}</td>
+                    <td>{{ data.total_value | usd}}</td>
+                </tr>
+            {% endfor %}
+                <tr>
+                    <td colspan="2" align="right"></td>
+                    <th>Cash</th>
+                    <td>{{user_cash}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right"></td>
+                    <th>TOTAL</th>
+                    <td>{{grand_total}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

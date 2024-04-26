@@ -1,4 +1,4 @@
-a`body {
+body {
     background-color: #fff;
     color: #212529;
     font-size: 1rem;
@@ -13,6 +13,8 @@ a`body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    text-align: center;
+    width: 90%;
 }
 
 .header {
@@ -24,7 +26,10 @@ a`body {
 }
 
 .section {
-    padding: 0.5rem 2rem 1rem 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
 }
 
 .section:hover {
@@ -50,13 +55,29 @@ button, input[type="submit"] {
     vertical-align: middle;
 }
 
-
-input[type="text"] {
+input[type="text"], input[type="number"] {
     line-height: 1.8;
     width: 25%;
 }
 
-input[type="text"]:hover {
+input[type="text"]:hover, input[type="number"]:hover {
     background-color: #f5f5f5;
     transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
 }
+
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 208, 255, 0.3)
+}
+

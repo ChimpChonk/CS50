@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Buy stocks</h1>
+    {% if not amount %}
+        <div class="section">
+            <form action="/buy" method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>
+                            <input autocomplete="off"  name="symbol" autofocus class="form-control mx-auto w-auto" placeholder="Search" type="text">
+                        </td>
+                        <td>
+                            <input name="shares" autocomplete="off" autofocus class="form-control mx-auto w-auto" type="text" placeholder=shares>
+                            </td>
+                            <td>
+                                <button type="submit" name="buy" class="btn btn-primary" value="buy">Buy</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    {% endif %}
+{% endblock %}
